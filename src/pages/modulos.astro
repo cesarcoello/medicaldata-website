@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro"
+import CardModulo from "../components/CardModulo.astro"
+import { modulos } from "../data/modulos"
+---
+
+<Base title="Modulos">
+	<h1>Modulos</h1>
+
+    <div class="grid grid-cols-2 gap-8 p-8 w-4/5 mx-auto">
+        {modulos.map( ({nombre, url, img}) => (
+            <CardModulo nombre={nombre} url={url} img={img} />
+        ))}
+    </div>
+
+    <h2>Expedientes</h2>
+    <h2>Citas</h2>
+    <h2>Alertas y Recordatorios</h2>
+    <h2>Inventario</h2>
+</Base>

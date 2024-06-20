@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="MedicalData">
+  
+	<!-- Sección con fondo de imagen -->
+  <section class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('img/inicio.jpg');">
+    <!-- Div para el gradiente en tablet y escritorio y opacidad uniforme en móvil -->
+    <div class="absolute inset-0 bg-white/75 md:bg-transparent md:bg-gradient-to-r md:from-white/90 md:to-white/15 rtl:md:from-white/90 rtl:md:to-white/50"></div>
+
+    <!-- Contenido principal -->
+    <div
+    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+  >
+    <div class="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">
+        Transforma tu clínica con <span  class=" text-blue-700">MedicalData</span>
+      </h1>
+
+      <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+		Digitaliza expedientes para acceso rápido, mejora diagnósticos y personaliza la atención al paciente.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 text-center">
+        <a
+          href="#"
+          class="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-bold text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto "
+        >
+		COMIENZA AHORA
+        </a>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+</Base>

@@ -1,0 +1,13 @@
+---
+import { modulos } from '../../data/modulos';
+
+export function getStaticPaths() {
+  return modulos.map( modulo => ({params:{slug:modulo.url}, props:{data:modulo}}));
+}
+
+const {nombre, url, img} = Astro.props.data
+// const { modulo } = Astro.params;
+console.log()
+---
+<div>Modulo {nombre}!</div>
+<img src={`/img/${img}`} alt="">
