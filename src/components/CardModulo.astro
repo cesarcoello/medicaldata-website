@@ -32,7 +32,7 @@ const {nombre, descripcion, url, img} = Astro.props
             </svg>
         </span>
 
-        <a href={`/modulos/${url}`}>
+        <a href={`/${url}`}>
             <h3 class="mt-0.5 text-lg font-black text-gray-900">
                 {nombre}
             </h3>
@@ -42,7 +42,7 @@ const {nombre, descripcion, url, img} = Astro.props
             {descripcion}
         </p>
 
-        <a href={`/modulos/${url}`} class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+        <a href={`/${url}`} class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
             Ver más
 
             <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
