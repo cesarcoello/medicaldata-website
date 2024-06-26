@@ -1,27 +1,24 @@
 ---
 import Base from "../layouts/Base.astro";
+import CardInformacion from "../components/CardInformacion.astro";
 ---
 
 <Base title="Nosotros">
 	<section class="bg-white dark:bg-gray-900">
 		<div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 			<div class="font-light text-gray-600 sm:text-lg dark:text-gray-400">
-				<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 hover:text-blue-700 dark:text-white">¿Quiénes Somos?</h2>
-				<p class="mb-4 font-normal">MedicalData es una solución diseñada específicamente para médicos con clínicas propias,
-					enfocada en la digitalización y gestión eficiente de los expedientes de pacientes. Su propósito
-					principal es permitir a los médicos crear y mantener expedientes clínicos digitales de manera
-					organizada y segura, llevando un seguimiento continuo de los pacientes desde su primera visita
-					hasta la finalización de sus tratamientos, para mejorar la eficiencia en la práctica médica y
-					facilitar el acceso rápido a información crítica. Esta funcionalidad tiene como objetivo optimizar
-					el flujo de trabajo clínico y personalizar la atención al paciente según las necesidades
-					específicas de cada consulta.</p>
+				
 
-					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 hover:text-blue-700 dark:text-white">Nuestra Visión</h2>
-					
-					<p class="mb-4 font-normal">Facilitar la transición de clínicas tradicionales a clínicas digitalmente avanzadas mediante la
-						implementación de tecnología para aumentar la gestión y la eficiencia operativa en la práctica
-						médica, reduciendo el tiempo dedicado a tareas administrativas y permitiendo a los médicos
-						enfocarse más en la atención directa al paciente.</p>
+					<CardInformacion 
+						titulo="¿Quiénes Somos?" 
+						descripcion="MedicalData es una solución diseñada específicamente para médicos con clínicas propias, enfocada en la digitalización y gestión eficiente de los expedientes de pacientes. Su propósito principal es permitir a los médicos crear y mantener expedientes clínicos digitales de manera organizada y segura, llevando un seguimiento continuo de los pacientes desde su primera visita hasta la finalización de sus tratamientos, para mejorar la eficiencia en la práctica médica y facilitar el acceso rápido a información crítica. Esta funcionalidad tiene como objetivo optimizar el flujo de trabajo clínico y personalizar la atención al paciente según las necesidades específicas de cada consulta."
+					/>
+
+					<CardInformacion 
+						titulo="Nuestra Visión" 
+						descripcion="Facilitar la transición de clínicas tradicionales a clínicas digitalmente avanzadas mediante la implementación de tecnología para aumentar la gestión y la eficiencia operativa en la práctica médica, reduciendo el tiempo dedicado a tareas administrativas y permitiendo a los médicos enfocarse más en la atención directa al paciente."
+					/>
+
 			</div>
 			<div class="grid grid-cols-2 gap-4 mt-8">
 				<img class="w-full rounded-lg" src="/assets/img/nosotros_01.jpg" alt="office content 1">
