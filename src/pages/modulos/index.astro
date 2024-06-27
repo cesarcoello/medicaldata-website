@@ -1,7 +1,7 @@
 ---
-import Base from "../layouts/Base.astro"
-import CardModulo from "../components/CardModulo.astro"
-import { modulos } from "../data/modulos"
+import Base from "../../layouts/Base.astro"
+import CardModulo from "../../components/CardModulo.astro"
+import { modulos } from "../../data/modulos"
 ---
 
 <Base title="Modulos">
@@ -12,8 +12,7 @@ import { modulos } from "../data/modulos"
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Módulos Diseñados para Optimizar Tu Clínica</h2>
                 <p class="text-gray-500 sm:text-xl dark:text-gray-400">Ofrecemos módulos innovadores que transforman la manera en que gestionas tu clínica. Descubre cómo nuestros módulos pueden facilitar tu trabajo diario y ayudarte a proporcionar un cuidado excepcional a tus pacientes.</p>
             </div>
-            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0">
-                
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0">         
             
                 {modulos.map( ({nombre, descripcion, url, img}) => (
                 <CardModulo 
@@ -22,10 +21,7 @@ import { modulos } from "../data/modulos"
                     url={url} 
                     img={img} />
                 ))}
-            
-
-        
-                
+                    
             </div>
         </div>
       </section>
