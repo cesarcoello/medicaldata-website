@@ -2,11 +2,10 @@
 interface Props{
     nombre: string,
     descripcion: string,
-    url: string,
-    img: string
+    url: string
 }
 
-const {nombre, descripcion, url, img} = Astro.props
+const {nombre, descripcion, url} = Astro.props
 ---
 <article
         class="rounded-lg border border-gray-100 bg-white p-4 shadow-xl transition hover:shadow-lg sm:p-6"

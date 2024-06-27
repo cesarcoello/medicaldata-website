@@ -6,14 +6,14 @@ export function getStaticPaths() {
   return modulos.map( modulo => ({params:{slug:modulo.url}, props:{data:modulo}}));
 }
 
-const {nombre, descripcion, url, img} = Astro.props.data
+const {nombre, descripcion, url, img, caracteristicas} = Astro.props.data
 // const { modulo } = Astro.params;
 // console.log(url)
 ---
 
 <Base title={nombre}>
   <section>
-    <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto mb-20 py-8 max-w-screen-2xl px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
         <div class="relative z-10 lg:py-16">
           <div class="relative h-64 sm:h-80 lg:h-full">
@@ -38,6 +38,21 @@ const {nombre, descripcion, url, img} = Astro.props.data
             <p class="mt-4 text-gray-600">
               {descripcion}
             </p>
+
+
+            <ul role="list" class="my-4 mx-0 space-y-4 text-left">
+        
+              {caracteristicas.map( caracteristica => (
+
+                  <li class="flex items-center space-x-3">
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span class="text-gray-600">{caracteristica}</span>
+                  </li>
+              
+                ))}
+      
+              
+          </ul>
 
             <a
               href="/login"
